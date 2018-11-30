@@ -1,28 +1,27 @@
 # Supplementary
 
-1. Install
-
-Install Mocha in my laptop.
-sudo npm install mocha
-creat a file named test and also creat a javascript file under test. This JS file is my editor.
+    1. Install
+    Install Mocha in my laptop.sudo npm install mocha.
+    creat a file named test and also creat a javascript file under test. 
+    This JS file is my editor.
 
 # Assert and Chai
 
-var  foo = 'bar'
-  , beverages = { tea: [ 'chai', 'matcha', 'oolong' ] };
+    var  foo = 'bar'
+      , beverages = { tea: [ 'chai', 'matcha', 'oolong' ] };
 
-assert.typeOf(foo, 'string'); 
-// without optional message
-assert.typeOf(foo, 'string', 'foo is a string'); 
-// with optional message
-assert.equal(foo, 'bar', 'foo equal `bar`');
-assert.lengthOf(foo, 3, 'foo`s value has a length of 3');
-assert.lengthOf(beverages.tea, 3, 'beverages has 3 types of tea');
+    assert.typeOf(foo, 'string'); 
+    // without optional message
+    assert.typeOf(foo, 'string', 'foo is a string'); 
+    // with optional message
+    assert.equal(foo, 'bar', 'foo equal `bar`');
+    assert.lengthOf(foo, 3, 'foo`s value has a length of 3');
+    assert.lengthOf(beverages.tea, 3, 'beverages has 3 types of tea');
 
-var chai = require('chai');
-var assert = chai.assert;
-var expect = chai.expect;
-var should = chai.should();
+    var chai = require('chai');
+    var assert = chai.assert;
+    var expect = chai.expect;
+    var should = chai.should();
 
 # TDD and BDD
 
