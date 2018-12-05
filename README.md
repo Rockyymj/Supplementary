@@ -18,6 +18,12 @@ What's the point of passing a unit test? If we modify the code of ABS () functio
 
 The greatest advantage of this test-driven development model is to ensure that the behaviours of a program module conforms to the test cases we designed. In future modifications, it can be guaranteed that the module's behaviours is still correct to a great extent.
 
+# Description and it
+
+The description is called a "test suite" and represents a set of related tests. It is a function. The first parameter is the name of the test suite, and the second parameter is a function that is actually executed.
+
+It are called "test cases" and represent a single test, which is the smallest unit of test. It is also a function. The first parameter is the name of the test case, and the second parameter is a function that is actually executed.
+
 # Prepration
 
     1. Install
@@ -31,6 +37,8 @@ The greatest advantage of this test-driven development model is to ensure that t
 
 
 # Assert and Chai library
+
+The "assertion" is to determine whether the actual execution results of the source code are consistent with the expected results, if not, throw an error. All test cases (it blocks) should contain one or more assertions. It is the key to writing test cases. The assertion function is implemented by the assertion library. Mocha itself does not have the assertion library, so the assertion library must be installed first.
 
     var  foo = 'bar'
     , beverages = { tea: [ 'chai', 'matcha', 'milktea' ] };
@@ -51,6 +59,8 @@ The greatest advantage of this test-driven development model is to ensure that t
 # Login test
 
 In assignment 3, we choose a set of methods to test. We choose the method of login. We first run the project to register an account. If we can login according to this account, we can succeed, then the test method passes the test.
+
+Mocha defaults to execute each test case for up to 2,000 milliseconds, and if no result is obtained, it will report an error. For test cases involving asynchronous operations, this time is often insufficient, and the - t or - timeout parameter is required to specify the timeout threshold.
 
 # TDD and BDD
 
