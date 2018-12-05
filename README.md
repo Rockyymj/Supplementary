@@ -48,6 +48,10 @@ The greatest advantage of this test-driven development model is to ensure that t
     var expect = chai.expect;
     var should = chai.should();
 
+# Login test
+
+In assignment 3, we choose a set of methods to test. We choose the method of login. We first run the project to register an account. If we can login according to this account, we can succeed, then the test method passes the test.
+
 # TDD and BDD
 
 TDD: test-driven Development is a core practice and technology in agile Development as well as a design methodology. TDD works by writing unit test case code before functional code is developed, which determines what product code needs to be written. The basic idea of TDD is to promote the whole development process through testing. However, test-driven development is not just a test work, but a quantitative process of requirement analysis, design and quality control. TDD first considers the use of requirements (object, function, process, interface, etc.), mainly to write a test case framework to design the process and interface of function, and the test framework can continuously verify.
