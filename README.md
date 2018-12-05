@@ -1,3 +1,23 @@
+# Mocha
+
+Mocha is a unit testing framework for JavaScript, which can run in both browser and Node. JS environments.
+
+With mocha, we just need to focus on writing the unit test itself, and then let Mocha run all the tests automatically and give the test results.
+
+The main characteristics of mocha are:
+
+1. You can test both simple JavaScript functions and asynchronous code, because asynchrony is one of the characteristics of JavaScript.
+
+2. All tests can be run automatically, also can run specific tests only.
+
+3. Mocha can support before, after, beforeEach and afterEach to write initialization code.
+
+# Unit test
+
+What's the point of passing a unit test? If we modify the code of ABS () function, we only need to run the unit test again. If we pass the test, it shows that our modification will not affect the original behaviour of ABS () function. If the test fails, it shows that our modification is inconsistent with the original behaviour, either modify the code or modify the test.
+
+The greatest advantage of this test-driven development model is to ensure that the behaviours of a program module conforms to the test cases we designed. In future modifications, it can be guaranteed that the module's behaviours is still correct to a great extent.
+
 # Prepration
 
     1. Install
@@ -8,19 +28,19 @@
     2.
     creat a file named "test" and a javascript named "test.js" which under the file
     
-What's the point of passing a unit test? If we modify the code of ABS () function, we only need to run the unit test again. If we pass the test, it shows that our modification will not affect the original behaviour of ABS () function. If the test fails, it shows that our modification is inconsistent with the original behaviour, either modify the code or modify the test.
 
-# Assert and Chai
+
+# Assert and Chai library
 
     var  foo = 'bar'
-      , beverages = { tea: [ 'chai', 'matcha', 'oolong' ] };
+    , beverages = { tea: [ 'chai', 'matcha', 'milktea' ] };
 
-    assert.typeOf(foo, 'string'); 
+    assert.typeOf(abc, 'string'); 
     // without optional message
-    assert.typeOf(foo, 'string', 'foo is a string'); 
+    assert.typeOf(abc, 'string', 'abc is a string'); 
     // with optSupplementaryional message
-    assert.equal(foo, 'bar', 'foo equal `bar`');
-    assert.lengthOf(foo, 3, 'foo`s value has a length of 3');
+    assert.equal(abc, 'bar', 'abc equal `bar`');
+    assert.lengthOf(abc, 3, 'abc`s value has a length of 3');
     assert.lengthOf(beverages.tea, 3, 'beverages has 3 types of tea');
 
     var chai = require('chai');
